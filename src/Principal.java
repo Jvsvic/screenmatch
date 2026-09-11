@@ -29,6 +29,14 @@ public class Principal {
         desafio.Avalia(6);
 
         desafio.exibeFichaTecnica();
+
+        Pessoa pessoa1 = new Pessoa();
+        pessoa1.olaMundo();
+
+        Calculadora calc = new Calculadora();
+        calc.numero = 2;
+        System.out.println("O dobro do número " + calc.numero + " é " + calc.dobroNumero());
+
 //        System.out.println(desafio.somaAvaliacoes);
 //        System.out.println(desafio.totalDeAvaliacoes);
 //        System.out.println(desafio.pegaMedia());
