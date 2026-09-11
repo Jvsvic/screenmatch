@@ -7,13 +7,32 @@ public class Principal {
         meuFilme.anoDeLancamento = 1970;
         meuFilme.duracaoEmMinutos = 180;
 
-        meuFilme.exibeFichaTecnica();
         meuFilme.Avalia(8);
         meuFilme.Avalia(5);
         meuFilme.Avalia(10);
+        meuFilme.exibeFichaTecnica();
+//        System.out.println(meuFilme.somaAvaliacoes);
+//        System.out.println(meuFilme.totalDeAvaliacoes);
+//        System.out.println(meuFilme.pegaMedia());
 
-        System.out.println(meuFilme.somaAvaliacoes);
-        System.out.println(meuFilme.totalDeAvaliacoes);
-        System.out.println(meuFilme.pegaMedia());
+        //------------------------------------------------
+        //Desafio Simples
+        Filme desafio = new Filme();
+        desafio.nome = "A fuga das galinhas";
+        desafio.anoDeLancamento = 2022;
+        desafio.duracaoEmMinutos = 150;
+        desafio.incluidoNoPlano = true;
+
+        desafio.Avalia(1);
+        desafio.Avalia(10);
+        desafio.Avalia(8);
+        desafio.Avalia(6);
+
+        desafio.exibeFichaTecnica();
+//        System.out.println(desafio.somaAvaliacoes);
+//        System.out.println(desafio.totalDeAvaliacoes);
+//        System.out.println(desafio.pegaMedia());
+
+
     }
 }
