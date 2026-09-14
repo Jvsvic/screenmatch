@@ -4,18 +4,27 @@ public class Principal {
     public static void main(String[] args) {
 
         Filme meuFilme = new Filme();
-
-        meuFilme.setNome("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1970);
-        meuFilme.setDuracaoEmMinutos(180);
+        meuFilme.setNome("Teste");
         meuFilme.setIncluidoNoPlano(true);
-
-        meuFilme.Avalia(8);
-        meuFilme.Avalia(5);
+        meuFilme.setAnoDeLancamento(2022);
+        meuFilme.setDuracaoEmMinutos(180);
+        meuFilme.Avalia(2);
         meuFilme.Avalia(10);
+        meuFilme.Avalia(5);
         meuFilme.exibeFichaTecnica();
 
 
+        /*
+         * meuFilme.setNome("O poderoso chefão");
+         * meuFilme.setAnoDeLancamento(1970);
+         * meuFilme.setDuracaoEmMinutos(180);
+         * meuFilme.setIncluidoNoPlano(true);
+         * 
+         * meuFilme.Avalia(8);
+         * meuFilme.Avalia(5);
+         * meuFilme.Avalia(10);
+         * meuFilme.exibeFichaTecnica();
+         */
 
         // System.out.println(meuFilme.somaAvaliacoes);
         // System.out.println(meuFilme.totalDeAvaliacoes);
@@ -71,6 +80,29 @@ public class Principal {
          * System.out.println(desafio.totalDeAvaliacoes);
          * System.out.println(desafio.pegaMedia());
          */
+        
+        ContaBancaria continha = new ContaBancaria();
+        continha.titular = "João Vitor";
+        continha.setNumeroConta(1659871);
+        continha.setSaldo(2500.00);
+        continha.exibeFichaConta();
 
+        IdadePessoa menor = new IdadePessoa();
+        menor.setNome("Juca");
+        menor.setIdade(17);
+        System.out.println("Nome: " + menor.getNome() + "\nIdade: " + menor.getIdade());
+        menor.verificarIdade();
+        
+        Produto produto = new Produto();
+        produto.setNome("Candida");
+        produto.setPreco(20);
+        produto.aplicarDesconto(10);
+        System.out.println(produto.getPreco());
+
+        Livro arte = new Livro();
+        arte.setTitulo("Qualquer pessoa");
+        arte.setAutor("Qualquer nome: ");
+        arte.exibeLivro();
     }
+    
 }

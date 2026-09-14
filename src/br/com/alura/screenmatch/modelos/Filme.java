@@ -15,7 +15,7 @@ public class Filme {
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
     }
-    getAnoDeLancamento() {
+    public int getAnoDeLancamento() {
         return anoDeLancamento;
     }
     public String getNome() {
@@ -42,7 +42,7 @@ public class Filme {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Duração em minutos: " + duracaoEmMinutos);
         System.out.println("Incluido no plano atual? " + incluidoNoPlano);
-        System.out.println("Soma das avaliações finais: " + somaAvaliacoes);
+        System.out.println("Média das avaliações: " + pegaMedia());
         System.out.println("Total de avaliações: " + getTotalDeAvaliacoes());
         System.out.println();
 
