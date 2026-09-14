@@ -1,4 +1,6 @@
+import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -11,9 +13,22 @@ public class Principal {
         meuFilme.Avalia(2);
         meuFilme.Avalia(10);
         meuFilme.Avalia(5);
-        meuFilme.exibeFichaTecnica();
 
 
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Avatar");
+        outroFilme.setIncluidoNoPlano(true);
+        outroFilme.setAnoDeLancamento(2022);
+        outroFilme.setDuracaoEmMinutos(1800);
+        System.out.println(meuFilme.getDuracaoEmMinutos());
+        System.out.println(outroFilme.getDuracaoEmMinutos());
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        System.out.println(calculadora.getTempoTotal());
+        
         /*
          * meuFilme.setNome("O poderoso chefão");
          * meuFilme.setAnoDeLancamento(1970);
@@ -81,7 +96,7 @@ public class Principal {
          * System.out.println(desafio.pegaMedia());
          */
         
-        ContaBancaria continha = new ContaBancaria();
+        /*ContaBancaria continha = new ContaBancaria();
         continha.titular = "João Vitor";
         continha.setNumeroConta(1659871);
         continha.setSaldo(2500.00);
@@ -102,7 +117,19 @@ public class Principal {
         Livro arte = new Livro();
         arte.setTitulo("Qualquer pessoa");
         arte.setAutor("Qualquer nome: ");
-        arte.exibeLivro();
+        arte.exibeLivro();*/
+
+        Serie lost = new Serie();
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2000);
+        lost.setTemporadas(10);
+        lost.setEpisodiosPorTemporada(10); 
+        lost.setMinutosPorEpisodio(50);
+        System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
+    
+        calculadora.inclui(lost);
+        System.out.println(calculadora.getTempoTotal());
+
     }
     
 }
