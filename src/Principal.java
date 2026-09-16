@@ -1,3 +1,4 @@
+
 import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Filme;
@@ -141,6 +142,15 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
         
-    }
+        ConversorMoeda moeda = new ConversorMoeda();
+        System.out.println(moeda.converterDolarParaReal(10));
+
+        CalculadoraSalaRetangular sala = new CalculadoraSalaRetangular(5.0, 3.0);
+        System.out.println(sala.calcularArea());
+        System.out.println(sala.calcularPerimetro());
+        
     
+    TabuadaMultiplicacao tabuadaum = new TabuadaMultiplicacao();
+    tabuadaum.mostrarTabuada(7);
+    }
 }
