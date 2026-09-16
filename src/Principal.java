@@ -1,6 +1,8 @@
 import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.screenmatch.modelos.Episodio;
 
 public class Principal {
     public static void main(String[] args) {
@@ -29,17 +31,17 @@ public class Principal {
         calculadora.inclui(outroFilme);
         System.out.println(calculadora.getTempoTotal());
         
-        /*
-         * meuFilme.setNome("O poderoso chefão");
-         * meuFilme.setAnoDeLancamento(1970);
-         * meuFilme.setDuracaoEmMinutos(180);
-         * meuFilme.setIncluidoNoPlano(true);
-         * 
-         * meuFilme.Avalia(8);
-         * meuFilme.Avalia(5);
-         * meuFilme.Avalia(10);
-         * meuFilme.exibeFichaTecnica();
-         */
+        
+        meuFilme.setNome("O poderoso chefão");
+        meuFilme.setAnoDeLancamento(1970);
+        meuFilme.setDuracaoEmMinutos(180);
+        meuFilme.setIncluidoNoPlano(true);
+         
+        meuFilme.Avalia(1);
+        meuFilme.Avalia(2);
+        meuFilme.Avalia(2);
+        meuFilme.exibeFichaTecnica();
+         
 
         // System.out.println(meuFilme.somaAvaliacoes);
         // System.out.println(meuFilme.totalDeAvaliacoes);
@@ -130,6 +132,15 @@ public class Principal {
         calculadora.inclui(lost);
         System.out.println(calculadora.getTempoTotal());
 
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(lost);
+        episodio.setTotalVisualizacoes(300);
+        filtro.filtra(episodio);
+        
     }
     
 }
