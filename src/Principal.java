@@ -168,7 +168,7 @@
         
         //TabuadaMultiplicacao tabuadaum = new TabuadaMultiplicacao();
         //tabuadaum.mostrarTabuada(7);
-        Pessoa pessoa1 = new Pessoa();
+        /*Pessoa pessoa1 = new Pessoa();
         pessoa1.setNomew("João");
         pessoa1.setIdadew(25);
         
@@ -186,7 +186,7 @@
         listaDePessoas.add(pessoa1);
         listaDePessoas.add(pessoa2);
         listaDePessoas.add(pessoa3);
-        System.out.println(listaDePessoas.size() + listaDePessoas.toString());
+        System.out.println(listaDePessoas.size() + listaDePessoas.toString());*/
 
 
         }
