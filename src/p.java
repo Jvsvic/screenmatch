@@ -1,0 +1,6 @@
+/**
+ * p
+ */
+public class p {
+
+}
