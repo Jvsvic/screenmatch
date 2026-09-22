@@ -10,25 +10,22 @@
     public class Principal {
         public static void main(String[] args) {
 
-            var filmeDoPaulo = new Filme();
-            filmeDoPaulo.setNome("Dogville");
-            filmeDoPaulo.setAnoDeLancamento(2003);
+            var filmeDoPaulo = new Filme("Dogville", 2003);
+            //filmeDoPaulo.setNome("Dogville");
             filmeDoPaulo.setDuracaoEmMinutos(200);
             filmeDoPaulo.Avalia(10);
 
-            Filme meuFilme = new Filme();
-            meuFilme.setNome("Teste");
+            Filme meuFilme = new Filme("Teste", 2026);
+            //meuFilme.setNome("Teste");
             meuFilme.setIncluidoNoPlano(true);
-            meuFilme.setAnoDeLancamento(2022);
             meuFilme.setDuracaoEmMinutos(180);
             meuFilme.Avalia(2);
             meuFilme.Avalia(10);
             meuFilme.Avalia(5);
 
-            Filme outroFilme = new Filme();
-            outroFilme.setNome("Avatar");
+            Filme outroFilme = new Filme("Avatar", 2022);
+            //outroFilme.setNome("Avatar");
             outroFilme.setIncluidoNoPlano(true);
-            outroFilme.setAnoDeLancamento(2022);
             outroFilme.setDuracaoEmMinutos(1800);
             System.out.println(meuFilme.getDuracaoEmMinutos());
             System.out.println(outroFilme.getDuracaoEmMinutos());
@@ -39,9 +36,6 @@
             //calculadora.inclui(outroFilme);
             //System.out.println(calculadora.getTempoTotal());
             
-            
-            meuFilme.setNome("O poderoso chefão");
-            meuFilme.setAnoDeLancamento(1970);
             meuFilme.setDuracaoEmMinutos(180);
             meuFilme.setIncluidoNoPlano(true);
             
@@ -57,6 +51,9 @@
             System.out.println("Tamanho da lista: " + listaDeFilmes.size());
             System.out.println("Primeiro filme: " + listaDeFilmes.get(0).toString());
             System.out.println(listaDeFilmes);
+
+            
+             
 
             //-------------------------------------------------
 
@@ -138,9 +135,7 @@
             arte.setAutor("Qualquer nome: ");
             arte.exibeLivro();*/
 
-            Serie lost = new Serie();
-            lost.setNome("Lost");
-            lost.setAnoDeLancamento(2000);
+            Serie lost = new Serie("Lost", 2000);
             lost.setTemporadas(10);
             lost.setEpisodiosPorTemporada(10); 
             lost.setMinutosPorEpisodio(50);
@@ -187,7 +182,21 @@
         listaDePessoas.add(pessoa2);
         listaDePessoas.add(pessoa3);
         System.out.println(listaDePessoas.size() + listaDePessoas.toString());*/
+        
+        Produto produto1 = new Produto("Feijão", 200.00, 13);
+        Produto produto2 = new Produto("Macarrão", 7.50, 10000);
+        Produto produto3 = new Produto("Galinhada", 25, 150);
+        ArrayList<Produto> produtos = new ArrayList<>();
+        produtos.add(produto1);
+        produtos.add(produto2);
+        produtos.add(produto3);
+        System.out.println(produtos.toString());
+        ProdutoPerecivel vencido = new ProdutoPerecivel("Feijoada", 200, 13, "23/08/2026");
 
+        System.out.println(vencido);
 
+        
         }
+
+        
     }
