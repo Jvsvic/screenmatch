@@ -1,3 +1,4 @@
+package br.com.alura.screenmatch.exercicios;
 public class TabuadaMultiplicacao implements Tabuada {
 
     @Override 

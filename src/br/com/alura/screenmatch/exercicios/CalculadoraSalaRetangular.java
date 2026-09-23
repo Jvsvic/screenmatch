@@ -1,3 +1,4 @@
+package br.com.alura.screenmatch.exercicios;
 public class CalculadoraSalaRetangular implements CalculoGeometrico {
     private double altura;
     private double largura;

@@ -1,11 +1,17 @@
+package br.com.alura.screenmatch.principal;
 
-    import java.util.ArrayList;
+import java.util.ArrayList;
 
-    //import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
-    import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
-    import br.com.alura.screenmatch.modelos.Filme;
-    import br.com.alura.screenmatch.modelos.Serie;
-    import br.com.alura.screenmatch.modelos.Episodio;
+//import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
+
+import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
+import br.com.alura.screenmatch.exercicios.Animal;
+import br.com.alura.screenmatch.exercicios.Cachorro;
+import br.com.alura.screenmatch.exercicios.Produto;
+import br.com.alura.screenmatch.exercicios.ProdutoPerecivel;
+import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.screenmatch.modelos.Episodio;
 
     public class Principal {
         public static void main(String[] args) {
@@ -195,8 +201,28 @@
 
         System.out.println(vencido);
 
+
+        ArrayList<Animal> listaAnimais = new ArrayList<>();
+
+        Cachorro cachorro = new Cachorro("Lobinha", "Huscky");
+        Animal gato = new Animal("Felicio", "Frajola");
+        Animal peixe = new Animal("Bob", "Peixe-Palhaço");
+
+        listaAnimais.add(peixe);
+        listaAnimais.add(gato);
+        listaAnimais.add(cachorro);
         
+        if (cachorro instanceof Animal) {
+            Animal animal = (Animal) cachorro;
+            System.out.println(animal);
+        }
+        for (Animal animal : listaAnimais) {
+            System.out.println(animal);
+        }
+        
+
+        }
         }
 
         
-    }
+    

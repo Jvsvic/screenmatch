@@ -1,3 +1,4 @@
+package br.com.alura.screenmatch.exercicios;
 public class Pessoa {
     private String nomew;
     private int idadew;

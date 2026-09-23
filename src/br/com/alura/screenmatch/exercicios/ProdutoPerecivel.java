@@ -1,3 +1,4 @@
+package br.com.alura.screenmatch.exercicios;
 public class ProdutoPerecivel extends Produto {
     public String dataDeValidade;
 

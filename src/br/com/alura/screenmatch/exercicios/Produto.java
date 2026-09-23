@@ -1,3 +1,4 @@
+package br.com.alura.screenmatch.exercicios;
 public class Produto {
     private String nome;
     private double preco;
