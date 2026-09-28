@@ -1,5 +1,3 @@
-package br.com.alura.screenmatch.principal;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

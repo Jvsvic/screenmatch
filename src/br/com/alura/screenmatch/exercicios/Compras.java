@@ -1,6 +1,5 @@
 package br.com.alura.screenmatch.exercicios;
 
-import java.util.Comparator;
 
 public class Compras implements Comparable<Compras>{
     private double valor;
