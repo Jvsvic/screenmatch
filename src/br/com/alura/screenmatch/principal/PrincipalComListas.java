@@ -1,8 +1,12 @@
+package br.com.alura.screenmatch.principal;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+
+import com.google.gson.Gson;
 
 import br.com.alura.screenmatch.exercicios.ListaDeTitulos;
 import br.com.alura.screenmatch.modelos.Filme;
@@ -91,7 +95,7 @@ public class PrincipalComListas {
 
         System.out.println("ArrayList" + lista1);
         System.out.println("LinkedList: " + lista2);
-
+        
 
         }
 

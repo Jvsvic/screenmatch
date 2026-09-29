@@ -16,7 +16,7 @@ public class CoinApi {
         System.out.println("Qual cripto você escolhe para cotar? ");
         var cripto = leitura.nextLine();
         var link = "https://api.coingecko.com/api/v3/simple/price?ids="+ cripto + "&vs_currencies=" + moeda;
-
+        leitura.close();
 
 
         HttpClient client = HttpClient.newHttpClient();
