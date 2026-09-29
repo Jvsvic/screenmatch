@@ -95,7 +95,7 @@ public class PrincipalComListas {
 
         System.out.println("ArrayList" + lista1);
         System.out.println("LinkedList: " + lista2);
-        
+        Gson gson = new Gson();
 
         }
 
