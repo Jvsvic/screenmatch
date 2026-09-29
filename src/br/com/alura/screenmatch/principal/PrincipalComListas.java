@@ -96,7 +96,16 @@ public class PrincipalComListas {
         System.out.println("ArrayList" + lista1);
         System.out.println("LinkedList: " + lista2);
         Gson gson = new Gson();
-
+        gson.toJson(lista1);
+        gson.toJson(lista2);
+        gson.toJson(listaOrdenada);
+        gson.toJson(lista);
+        gson.toJson(numeros);
+        System.out.println(gson.toJson(lista1));
+        System.out.println(gson.toJson(lista2));
+        System.out.println(gson.toJson(listaOrdenada));
+        System.out.println(gson.toJson(lista));
+        System.out.println(gson.toJson(numeros));
         }
 
         
